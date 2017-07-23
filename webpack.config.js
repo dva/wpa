@@ -1,5 +1,6 @@
 const path = require('path')
 const ExamplePlugin = require('./ExamplePlugin')
+const webpack = require('webpack')
 
 module.exports = {
   entry: './src/index.js',
@@ -16,6 +17,8 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExamplePlugin()
+    new ExamplePlugin(),
+    new webpack.optimize.UglifyJsPlugin(),
+    new webpack.ContextReplacementPlugin()
   ]
 }
