@@ -5,6 +5,9 @@
   "repository": "git@github.com:dva/wpa.git",
   "author": "dva <denisva@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
   "devDependencies": {
     "webpack": "^3.3.0"
   }
