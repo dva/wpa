@@ -1,0 +1,11 @@
+{
+  "name": "wpa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:dva/wpa.git",
+  "author": "dva <denisva@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^3.3.0"
+  }
+}
