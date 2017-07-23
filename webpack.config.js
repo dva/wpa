@@ -1,4 +1,5 @@
 const path = require('path')
+const ExamplePlugin = require('./ExamplePlugin')
 
 module.exports = {
   entry: './src/index.js',
@@ -10,10 +11,11 @@ module.exports = {
     rules: [
       {
         test: /\.jpe?g$/,
-        use: [
-          'file-loader'
-        ]
+        use: ['file-loader']
       }
     ]
-  }
+  },
+  plugins: [
+    new ExamplePlugin()
+  ]
 }
