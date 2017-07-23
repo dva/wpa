@@ -6,7 +6,10 @@
   "author": "dva <denisva@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "watch": "webpack --watch"
   },
   "devDependencies": {
     "standard": "^10.0.2",
