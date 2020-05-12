@@ -18,7 +18,6 @@ module.exports = {
   },
   plugins: [
     new ExamplePlugin(),
-    new webpack.optimize.UglifyJsPlugin(),
     new webpack.ContextReplacementPlugin()
   ]
 }
