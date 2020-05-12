@@ -1,6 +1,5 @@
 const path = require('path')
 const ExamplePlugin = require('./ExamplePlugin')
-const webpack = require('webpack')
 
 module.exports = {
   mode: 'production',
@@ -18,7 +17,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExamplePlugin(),
-    new webpack.ContextReplacementPlugin()
+    new ExamplePlugin()
   ]
 }
